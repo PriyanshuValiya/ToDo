@@ -1,3 +1,6 @@
+import dotenv form "dotenv";
+dotenv.config();
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
@@ -7,7 +10,11 @@ let todos = [];
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+conat envData = process.env.NAME;
+
 app.get("/", (req, res) => {
+  console.log("name:", envData);
+  
   let todoList = todos
     .map((todo, index) => `<li>${todo} <a href="/delete/${index}">❌</a></li>`)
     .join("");
