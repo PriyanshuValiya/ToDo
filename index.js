@@ -6,11 +6,12 @@ const bodyParser = require("body-parser");
 const app = express();
 const PORT = 3000;
 
-let todos = [];
+conat envData = process.env.NAME;
+
+let todos = ["envData", envData];
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-conat envData = process.env.NAME;
 
 app.get("/", (req, res) => {
   console.log("name:", envData);
