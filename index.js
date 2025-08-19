@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
         </style>
       </head>
       <body>
-        <h2>Latest ToDos List</h2>
+        <h2>New Latest ToDos List</h2>
         <form action="/add" method="POST">
           <input type="text" name="todo" required />
           <button type="submit">Add</button>
