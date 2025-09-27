@@ -9,7 +9,7 @@ const PORT = 3000;
 const envData = process.env.NAME1;
 const envName = process.env.NAME2;
  
-let todos = ["Code", envData, "Sleep", envName];
+let todos = ["Eat", envData, "Netflix", envName];
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
